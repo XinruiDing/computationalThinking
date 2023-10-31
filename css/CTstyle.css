@@ -1,0 +1,173 @@
+html {
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+}
+
+@media (min-width:500px) {
+    ul.menuLinks {
+        display: flex;
+        margin: 0; /*let the menu stick on top without margin */
+        padding: 0; /*Cancel the default blank position on the left side of the list*/
+        justify-content: center;
+        background-color: #D87093;
+        box-shadow: 3px 7px 15px rgba(219, 112, 147, 0.5);
+    }
+
+}
+
+@media (max-width:499px) {
+    ul.menuLinks {
+        margin: 0; /*let the menu stick on top without margin */
+        padding: 0; /*Cancel the default blank position on the left side of the list*/
+        justify-content: center;
+        background-color: #D87093;
+        box-shadow: 3px 7px 15px rgba(219, 112, 147, 0.5);
+    }
+
+}
+
+
+    ul.menuLinks li {
+        list-style: none;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-inline: 25px;
+        text-align: center;
+    }
+
+    ul.menuLinks li a {
+        display: inline-block;
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        text-shadow: 0 0 2em #F5FFFA;
+        transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    ul.menuLinks li a:hover {
+        color: white;
+        background-color: rgba(219, 112, 147, 0.8);
+        box-shadow: 3px 7px 15px rgba(219, 112, 147, 0.7);
+        font-weight: 600;
+    }
+
+
+h1 {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 40px;
+    
+}
+
+.motto {
+    text-align: center;
+    font-style: italic;
+    color: dimgrey;
+    margin-bottom: 25px;
+}
+
+@media (min-width:1000px) {
+
+    main {
+        display: -webkit-flex; /*compatible with various browsers such as Opera*/
+        display: flex; /*set the sidebar*/
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    article {
+        width: 80%;
+        padding-right: 5%;
+    }
+
+    /*setting the vertical divider*/
+    .divider {
+        width: 1px;
+        margin-right: 10px;
+        background-color: black;
+    }
+
+    .sidebar {
+        position: fixed;
+        padding-top: 15px;
+        width: 16%;
+
+    }
+
+}
+
+@media (max-width:999px) {
+
+    /*setting the horizontal divider*/
+    .divider {
+        height: 1px;
+        margin-bottom: 10px;
+        background-color: black;
+    }
+}
+
+
+ol.sidebar li a {
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+}
+
+ul.biographySublist, ul.reflectionSublist {
+    overflow-wrap: break-word;
+    padding: 5px;
+    width: 100%;
+}
+
+ul.biographySublist li a, ul.reflectionSublist li a {
+    font-size: 18px;
+}
+
+/*click effect*/
+ol.sidebar li a:hover {
+    color: #D87093;
+    text-shadow: 0 10px 15px rgba(219, 112, 147, 0.7);
+    transform: translateY(-10px); /*add floating effect while keep the element at the right location*/
+}
+
+#part1, #part2, #part3, #part4, #part5, #contribution1, #contribution2, #contribution3, #week1, #week2 {
+    scroll-margin-top: 100px;
+    font-size: 16px;
+    margin-bottom: 60px;
+    overflow-wrap: break-word;
+}
+
+ol.reference {
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+sup a {
+    text-decoration: none;
+    color: #D87093;
+}
+
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 2px;
+}
+
+footer a {
+    font-size: 10px;
+    color: #D87093;
+}
